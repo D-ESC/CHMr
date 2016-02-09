@@ -33,13 +33,13 @@ and/or end date defined by the user.
 }
 \examples{
 # Establish connection with database
-CHM = odbcConnect("ORA", uid = "chrism", pwd = "chrism_pw")
+CHM = odbcConnect("Connection", "User id", "Password")
 
 # Extract all data by STATION
 tmp <- CHMselect(CHM, STATION = '03008557402')
 
 # Extract data by STATION and multiple TEST_NAME.
-HP4 = CHMselect(CHM, STATION = '03008557402', TEST_NAME = c('PPUT1','PPUT2'))
+tmp = CHMselect(CHM, STATION = '03008557402', TEST_NAME = c('PPUT1','PPUT2'))
 
 # Limit extraction by date.
 tmp = CHMselect(CHM, STATION = '03008557402', TEST_NAME = 'PPUT1',

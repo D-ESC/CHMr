@@ -16,7 +16,7 @@ A data frame
 }
 \description{
 The function CHMcatalog can be used to return a catalog of chemistry data in
-the DESC database. There are only two argumnets. One to define the connection
+the DESC database. There are only two arguments. One to define the connection
 handle and the other to limit the size of the catalog by sample count. Many
 sites within the DESC chemistry database have only 1 or two samples and are
 excluded by default. This can be changed by changing 'n' which defaults to 10
@@ -24,7 +24,7 @@ but can be set to any value.
 }
 \examples{
 # Establish connection with database
-CHM = odbcConnect("ORA", uid = "chrism", pwd = "chrism_pw")
+CHM = odbcConnect("Connection", "User id", "Password")
 
 # Grab a catalog of available chemistry data
 Catalog = CHMcatalog(CHM)
