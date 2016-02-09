@@ -13,7 +13,7 @@ Here is a quick example. You'll need the package RODBC in order to establish a c
 
 ```R
 require(CHMr)
-ODM <- odbcConnect("Connection", "User id", "Password")
+CHM <- odbcConnect("Connection", "User id", "Password")
 Catalog = CHMcatalog(CHM)
 ```
 
